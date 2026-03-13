@@ -17,6 +17,6 @@ jobs:
         with:
           dotnet-version: 9.0.x
 
-      - run: dotnet restore
-      - run: dotnet build --no-restore --configuration Release
-      - run: dotnet test --no-build --configuration Release
+      - run: dotnet restore FileSystemManager.sln
+      - run: dotnet build FileSystemManager.sln --no-restore --configuration Release
+      - run: dotnet test FileSystemManager.sln --no-build --configuration Release
